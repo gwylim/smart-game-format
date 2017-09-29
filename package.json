@@ -1,0 +1,29 @@
+{
+  "name": "smart-game-format",
+  "version": "0.0.1",
+  "description": "Serialization and parsing for SGF",
+  "scripts": {
+    "build": "babel src -d lib",
+    "copy-flow": "flow-copy-source src lib",
+    "prepare": "yarn run build && yarn run copy-flow",
+    "lint": "eslint ./src"
+  },
+  "files": [
+    "lib/"
+  ],
+  "main": "lib/index.js",
+  "repository": "https://github.com/gwylim/smart-game-format",
+  "author": "Gwylim Ashley",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.0.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-flow": "^6.23.0",
+    "eslint": "^4.6.0",
+    "flow-bin": "^0.54.0",
+    "flow-copy-source": "^1.2.1"
+  },
+  "dependencies": {
+  }
+}
